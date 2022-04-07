@@ -1,10 +1,14 @@
-<!DOCTYPE>
-<html>
-    <head>
-        <title>TODO LIST</title>
-        
-    </head>
-    <body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>TODO LIST</title>
+</head>
+<body>
+    <h1>MY TO DO LIST</h1>
         <header>
             <ul>
                 <li>money</li>
@@ -12,16 +16,29 @@
                 <li>family</li>
             </ul>
         </header>
-        <form action="." method="get">  
-            <label>Add elements to your to-do list</label><br>  
-            <input type="text" name="list1" id="id1"placeholder="Write here what you want to do"><br>  
-            <input type="text" name="list2" id="id2"placeholder="Write here what you want to do"><br> 
-            <input type="text" name="list3" id="id3"placeholder="Write here what you want to do"><br> 
-            <input type="text" name="list4" id="id4"placeholder="Write here what you want to do"><br> 
-            <input type="text" name="list4" id="id4"placeholder="Write here what you want to do"><br> 
-            <br><input type="submit" value="submit">  
-        </form>  
+
+        <script>
+
+            const handleInputChange = (e) =>{
+                const value = e.target.value;
+           }
+        </script>
+
+        
+        <div class ="container">
+            <form action="Post" method="get">  
+                <label>Add elements to your to-do list</label><br>  
+                <input onChange= {handleInputChange}  type="text" name="list1" id="id1"placeholder="Write here what you want to do"><br>  
+                <input type="text" name="list2" id="id2"placeholder="Write here what you want to do"><br>
+                <input type="text" name="list3" id="id3"placeholder="Write here what you want to do"><br> 
+                <button type="submit" value="post">Enter</button>
+            </form>
+        </div>  
         <!--external js-->
         <script src="./assets/js/index.js"></script>
-    </body>
+
+
+
+    
+</body>
 </html>
