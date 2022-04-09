@@ -16,19 +16,10 @@
                 <li>family</li>
             </ul>
         </header>
-
-        <script>
-
-            const handleInputChange = (e) =>{
-                const value = e.target.value;
-           }
-        </script>
-
-        
-        <div class ="container">
-            <form action="Post" method="get">  
+            <div class ="container">
+            <form action="." method="get">  
                 <label>Add elements to your to-do list</label><br>  
-                <input onChange= {handleInputChange}  type="text" name="list1" id="id1"placeholder="Write here what you want to do"><br>  
+                <input type="text" name="list1" id="id1"placeholder="Write here what you want to do"><br>  
                 <input type="text" name="list2" id="id2"placeholder="Write here what you want to do"><br>
                 <input type="text" name="list3" id="id3"placeholder="Write here what you want to do"><br> 
                 <button type="submit" value="post">Enter</button>
